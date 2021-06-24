@@ -26,7 +26,7 @@ export function SignIn(){
       />
     <View style={styles.content}>
     <Text style={styles.title}>
-        Não tem conta? Cadastre-se
+        Não tem conta ainda? Cadastre-se
     </Text>
       </View>
     </View>
