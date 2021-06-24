@@ -1,31 +1,28 @@
-import React from 'react';
-import { View, Image, Text } from 'react-native';
-import { styles } from './styles';
-import { Button } from '../../components/Button';
-import PesoImg from '../../assets/peso.png';
+import React from 'react'
+import { View, Text, Image } from 'react-native'
+import { Link } from '@react-navigation/native'
 
-export function Home() {
-  return(
+import PesoImg from '../../assets/peso.png'
+import Button from '../../components/Button'
 
+import { styles } from './styles'
+
+type Props =  View & {
+  navigation: any;
+}
+
+export default function Home({ navigation }: Props) {
+  return (
     <View>
       <View style={styles.container}>
-        <Image
-          source={PesoImg}
-          style={styles.image}
-          resizeMode="stretch"
-        />
-        <Button
-          title="Entrar"
-          activeOpacity={0.7}
-
-        />
-      <View style={styles.content}>
-      <Text style={styles.title}>
-          Esqueceu a senha?
-      </Text>
+        <Image source={PesoImg} style={styles.image} resizeMode="stretch" />
+        <Button title="Entrar" activeOpacity={0.7} onPress={() => navigation.navigate('SignIn')} />
+        <View style={styles.content}>
+          <Link to="/SignUp" style={styles.title}>
+            Não tem conta ainda? Cadastre-se
+          </Link>
         </View>
       </View>
     </View>
-
   )
 }

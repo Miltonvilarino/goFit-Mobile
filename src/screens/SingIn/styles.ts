@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
-import {theme} from '../../global/styles/theme';
-
+import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -19,9 +18,9 @@ export const styles = StyleSheet.create({
   },
   title: {
     color: theme.colors.heading,
-    width: 244,
+    width: 134,
     height: 18,
     top: 310,
-    left: 100,
+    left: 132,
   }
 })
