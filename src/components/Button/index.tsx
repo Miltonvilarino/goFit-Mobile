@@ -8,10 +8,10 @@ import {
 
 import { styles } from './styles';
 
-export function Button() {
+export function Button({children}) {
   return (
     <TouchableOpacity style={styles.container}>
-      <Text style={styles.title}>Entrar</Text>
+      <Text style={styles.title}>{children}</Text>
     </TouchableOpacity>
   );
 }

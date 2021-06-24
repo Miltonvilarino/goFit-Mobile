@@ -8,15 +8,15 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: theme.colors.background,
   },
-  content: {
-    marginTop: -40,
-    paddingHorizontal: 50,
-
-  },
   image: {
     width: 126,
     height: 88,
     marginBottom: 232,
+
+  },
+  content: {
+    marginTop: -40,
+    paddingHorizontal: 50,
 
   },
   title: {
@@ -25,5 +25,5 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     width: 244,
     marginTop: 100,
-  }
+  },
 })

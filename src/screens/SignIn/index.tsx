@@ -19,19 +19,17 @@ export function SignIn(){
         backgroundColor="transparent"
         translucent
       />
-    <Image
-      source={PesoImg}
-      style={styles.image}
-      resizeMode="stretch"
-    />
-
-      <Button />
-    <View style={styles.content}>
-      <Text style={styles.title}>
-      Não tem conta ainda? Cadastre-se
-      </Text>
-
-    </View>
+      <Image
+        source={PesoImg}
+        style={styles.image}
+        resizeMode="stretch"
+      />
+      <Button children="Entrar"/>
+      <View style={styles.content}>
+        <Text style={styles.title}>
+          Não tem conta ainda? Cadastre-se
+        </Text>
+      </View>
     </View>
   )
 }
