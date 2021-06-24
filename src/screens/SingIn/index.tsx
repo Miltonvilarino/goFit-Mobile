@@ -3,7 +3,6 @@ import {
   View,
   Text,
   Image,
-  StatusBar
 } from 'react-native';
 
 import PesoImg from '../../assets/peso.png';
@@ -14,11 +13,6 @@ import { styles } from './styles';
 export function SignIn(){
   return (
     <View style={styles.container}>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor="transparent"
-        translucent
-      />
     <Image
       source={PesoImg}
       style={styles.image}
@@ -33,7 +27,6 @@ export function SignIn(){
       <Text style={styles.title}>
       Não tem conta ainda? Cadastre-se
       </Text>
-
     </View>
     </View>
   )

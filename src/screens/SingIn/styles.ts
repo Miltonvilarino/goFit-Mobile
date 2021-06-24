@@ -1,12 +1,11 @@
 import { StyleSheet } from 'react-native';
-import theme from '../../global/styles/theme';
+import {theme} from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.colors.background,
   },
   image: {
     width: 108,
@@ -25,6 +24,7 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     width: 244,
     marginTop: 50,
+    fontFamily: theme.fonts.text400
 
   }
 })

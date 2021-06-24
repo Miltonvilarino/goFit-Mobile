@@ -1,13 +1,31 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import { StatusBar } from 'react-native';
+import { useFonts }  from 'expo-font'
+import { Quicksand_400Regular, Quicksand_500Medium, Quicksand_700Bold } from '@expo-google-fonts/quicksand';
+import AppLoading from 'expo-app-loading';
 
-import theme from './src/global/styles/theme';
-import { SignIn } from './src/screens/SignIn';
+import { Routes } from './src/routes';
+import { Background } from './src/components/Background';
 
 export default function App(){
+  const [fontsLoaded] =  useFonts({
+    Quicksand_400Regular,
+    Quicksand_500Medium,
+    Quicksand_700Bold
+  });
+
+  if(!fontsLoaded) {
+    return <AppLoading />
+  }
+
   return (
-    <ThemeProvider theme={theme}>
-      <SignIn />
-    </ThemeProvider>
+    <Background>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
+      <Routes />
+    </Background>
   );
 }
