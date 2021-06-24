@@ -8,16 +8,16 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: theme.colors.background,
   },
-  content: {
-    marginTop: -40,
-    paddingHorizontal: 50,
-
-  },
   image: {
     width: 108,
     height: 88,
     top: 123,
     marginBottom: 200,
+  },
+  content: {
+    marginTop: -40,
+    paddingHorizontal: 50,
+
   },
   title: {
     color: theme.colors.heading,
