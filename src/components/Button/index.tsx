@@ -8,10 +8,17 @@ import {
 
 import { styles } from './styles';
 
-export function Button() {
+type Props =  TouchableOpacityProps & {
+  title?: string;
+}
+
+export function Button({ title, ...rest }: Props) {
   return (
-    <TouchableOpacity style={styles.container}>
-      <Text style={styles.title}>Entrar</Text>
+    <TouchableOpacity
+        style={styles.container}
+        {...rest}
+      >
+      <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
 }

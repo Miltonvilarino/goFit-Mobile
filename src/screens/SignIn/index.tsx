@@ -6,7 +6,7 @@ import {
   StatusBar
 } from 'react-native';
 
-import PesoImg from '../../assets/peso.jpg';
+import PesoImg from '../../assets/peso.png';
 import { Button } from '../../components/Button';
 
 import { styles } from './styles';
@@ -25,7 +25,10 @@ export function SignIn(){
       resizeMode="stretch"
     />
 
-      <Button />
+      <Button
+        title="Entrar"
+        activeOpacity={0.7}
+      />
     <View style={styles.content}>
       <Text style={styles.title}>
       Não tem conta ainda? Cadastre-se

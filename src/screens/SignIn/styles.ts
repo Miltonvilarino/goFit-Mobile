@@ -14,16 +14,17 @@ export const styles = StyleSheet.create({
 
   },
   image: {
-    width: 126,
+    width: 108,
     height: 88,
-    marginBottom: 232,
-
+    top: 123,
+    marginBottom: 200,
   },
   title: {
     color: theme.colors.heading,
     textAlign: 'center',
     fontSize: 14,
     width: 244,
-    marginTop: 100,
+    marginTop: 50,
+
   }
 })

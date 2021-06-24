@@ -4,5 +4,6 @@ export default {
     background: '#1C1C1C',
     heading: '#F2EBEB',
     title: '#F2EBEB',
+    image: '#F2EBEB',
   }
 }
