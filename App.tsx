@@ -5,7 +5,6 @@ import { Quicksand_400Regular, Quicksand_500Medium, Quicksand_700Bold } from '@e
 import AppLoading from 'expo-app-loading';
 
 import { Routes } from './src/routes';
-import { Background } from './src/components/Background';
 
 export default function App(){
   const [fontsLoaded] =  useFonts({
@@ -19,13 +18,13 @@ export default function App(){
   }
 
   return (
-    <Background>
+    <>
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
       <Routes />
-    </Background>
+    </>
   );
 }
