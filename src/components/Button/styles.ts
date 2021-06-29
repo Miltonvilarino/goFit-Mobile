@@ -1,23 +1,16 @@
-import { StyleSheet } from 'react-native';
-import { theme } from '../../global/styles/theme';
+import styled from 'styled-components/native';
+import { BaseButton } from 'react-native-gesture-handler';
 
-export const styles= StyleSheet.create({
-  container: {
-    width: 158,
-    height: 40,
-    textAlign: 'center',
-    alignItems: 'center',
-    borderRadius: 21,
-    left: 111,
-    top: 300,
-    backgroundColor: theme.colors.primary,
-    marginTop: 140
-  },
-  title: {
-    flex: 1,
-    top: 10,
-    color: theme.colors.heading,
-    borderRadius: 10,
-    textAlign: 'center',
-  }
-})
+export const Container = styled(BaseButton)`
+  width: 158px;
+  height: 40px;
+  background: #BF1622;
+  border-radius: 21px;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Text = styled.Text`
+  color: #fff;
+  font-size: 16px;
+`;

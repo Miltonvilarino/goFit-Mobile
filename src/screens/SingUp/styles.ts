@@ -1,27 +1,24 @@
-import { StyleSheet } from 'react-native';
-import {theme} from '../../global/styles/theme';
+import styled from "styled-components/native";
 
+export const Container = styled.View`
+  flex: 1;
+`;
 
-export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  image: {
-    width: 108,
-    height: 88,
-    top: 188,
-    left: 130,
-    backgroundColor: theme.colors.secondary100
-  },
-  content: {
-    width: 71,
-    height: 40,
-  },
-  title: {
-    color: theme.colors.heading,
-    width: 244,
-    height: 18,
-    top: 310,
-    left: 100,
-  }
-})
+export const Foto = styled.Image`
+  width: 108px;
+  height: 88px;
+  top: 188px;
+  left: 130px;
+`;
+
+export const Content = styled.View`
+  width: 71px;
+  height: 40px;
+`;
+
+export const Title = styled.Text`
+  width: 134px;
+  height: 18px;
+  top: 310px;
+  left: 132px;
+`;

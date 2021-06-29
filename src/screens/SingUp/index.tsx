@@ -1,24 +1,21 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
-import { Link } from '@react-navigation/native'
-
-import PesoImg from '../../assets/peso.png'
+import { View } from 'react-native'
+import { Container, Foto, Title, Content } from './styles'
 import Button from '../../components/Button'
+import PesoImg from '../../assets/peso.png'
+import Input from '../../components/Input'
 
-import { styles } from './styles'
-
-export default function SignUp() {
+export default function SingIn() {
   return (
     <View>
-      <View style={styles.container}>
-        <Image source={PesoImg} style={styles.image} resizeMode="stretch" />
-        <Button title="Entrar" activeOpacity={0.7} />
-        <View style={styles.content}>
-          <Link to="" style={styles.title}>
-            SINGUP
-          </Link>
-        </View>
-      </View>
+      <Container>
+        <Foto source={PesoImg}  resizeMode="stretch" />
+        <Input style icon="call" placeholder="email"/>
+        <Button children="Entrar" />
+        <Content>
+          <Title>SINGUP</Title>
+        </Content>
+      </Container>
     </View>
   )
 }

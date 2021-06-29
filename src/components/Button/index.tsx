@@ -1,25 +1,22 @@
-import React from 'react';
-import {
-  Text,
-  View,
-  TouchableOpacity,
-  TouchableOpacityProps,
-} from 'react-native';
+import React, { ReactNode } from 'react'
+import { ActivityIndicator } from 'react-native'
 
-import { styles } from './styles';
+import { Container, Text } from './styles'
 
-type Props =  TouchableOpacityProps & {
-  title?: string;
+type Props = {
+  children: ReactNode;
+  loading?: string;
+  onPress?: any;
 }
 
-export default function Button({ title, ...rest }: Props) {
+export default function Button({ children, loading, ...rest }: Props) {
   return (
-    <TouchableOpacity
-        style={styles.container}
-        {...rest}
-      >
-      <Text style={styles.title}>{title}</Text>
-    </TouchableOpacity>
-  );
+    <Container {...rest}>
+      {loading ? (
+        <ActivityIndicator size="small" color="#FFF" />
+      ) : (
+        <Text>{children}</Text>
+      )}
+    </Container>
+  )
 }
-
