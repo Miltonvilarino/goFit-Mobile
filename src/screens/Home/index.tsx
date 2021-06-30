@@ -6,7 +6,6 @@ import PesoImg from '../../assets/peso.png'
 import { Container, Logo, Title, SubmitButton } from './styles'
 
 export default function Home() {
-
   const navigation = useNavigation()
 
   function handleNavigation() {
