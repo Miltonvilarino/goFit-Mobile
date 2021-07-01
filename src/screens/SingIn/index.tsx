@@ -9,13 +9,13 @@ export default function SingIn() {
         <BackButton screen={'/Home'} />
         <Logo source={PesoImg} resizeMode="stretch" />
           <FormInput
-          icon="mail-outline"
+          icon="mail"
           autoCorrect={false}
           autoCapitalize="none"
-          placeholder="Email"
+          placeholder="E-mail"
           />
           <FormInput
-            icon="lock-closed-outline"
+            icon="lock"
             secureTextEntry
             placeholder="Senha"
           />

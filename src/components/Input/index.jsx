@@ -1,13 +1,13 @@
 import React, { forwardRef } from 'react'
 
-import { Ionicons } from '@expo/vector-icons';
+import Icon from 'react-native-vector-icons/Feather';
 
 import { Container, TInput } from './styles'
 
 function Input({ style, icon, ...rest }, ref) {
   return (
     <Container style={style}>
-      {icon && <Ionicons name={icon} size={20} color="white" style={{ marginLeft: 7 }} />}
+      {icon && <Icon name={icon} size={20} color="white" style={{ marginLeft: 7 }} />}
       <TInput {...rest} ref={ref}/>
     </Container>
   )
