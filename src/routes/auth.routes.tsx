@@ -2,8 +2,8 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import Home from '../screens/Home'
-import SingIn from '../screens/SingIn'
-import SignUp from '../screens/SingUp'
+import SignIn from '../screens/SignIn'
+import SignUp from '../screens/SignUp'
 
 const { Navigator, Screen } = createStackNavigator()
 
@@ -16,10 +16,10 @@ export function AuthRoutes() {
           backgroundColor: 'transparent',
         },
       }}
-    >
+      >
       <Screen name="Home" component={Home} />
-      <Screen name="SignIn" component={SingIn} />
       <Screen name="SignUp" component={SignUp} />
+      <Screen name="SignIn" component={SignIn} />
     </Navigator>
   )
 }

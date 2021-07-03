@@ -3,7 +3,7 @@ import { Container, FormInput, Logo, Title, SubmitButton } from './styles'
 import BackButton from '../../components/BackButton'
 import PesoImg from '../../assets/peso.png'
 
-export default function SingIn() {
+export default function SignIn() {
   return (
       <Container>
         <BackButton screen={'/Home'} />

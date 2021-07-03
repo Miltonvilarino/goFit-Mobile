@@ -1,16 +1,33 @@
-import React, { forwardRef } from 'react'
+import React from "react";
+import { View } from "react-native";
+import Icon from "react-native-vector-icons/Feather";
 
-import Icon from 'react-native-vector-icons/Feather';
+import { Container, TextInput, Title } from "./styles";
 
-import { Container, TInput } from './styles'
-
-function Input({ style, icon, ...rest }, ref) {
+export default function Input({
+  style,
+  icon,
+  title,
+  placeholder,
+  secureTextEntry,
+  autoCorrect,
+  autoCapitalize,
+  ...props
+}) {
   return (
-    <Container style={style}>
-      {icon && <Icon name={icon} size={20} color="white" style={{ marginLeft: 7 }} />}
-      <TInput {...rest} ref={ref}/>
-    </Container>
-  )
+    <View style={style}>
+      {title && <Title>{title}</Title>}
+      <Container {...props}>
+        {icon && (
+          <Icon name={icon} size={20} color="white" style={{ marginLeft: 7 }} />
+        )}
+        <TextInput
+          placeholder={placeholder}
+          secureTextEntry={secureTextEntry}
+          autoCorrect={autoCorrect}
+          autoCapitalize={autoCapitalize}
+        />
+      </Container>
+    </View>
+  );
 }
-
-export default forwardRef(Input)

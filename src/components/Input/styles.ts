@@ -1,8 +1,13 @@
 import styled from "styled-components/native";
 
+interface ContainerProps {
+  width: string;
+  height: string;
+}
+
 export const Container = styled.View`
-  width: 242px;
-  height: 34px;
+  width: ${(props:ContainerProps) => props.width ? `${props.width}` : '242px'};
+  height: ${(props:ContainerProps) => props.height ? `${props.height}` : '34px'};
   background: #333232;
   border-radius: 4px;
   flex-direction: row;
@@ -12,11 +17,22 @@ export const Container = styled.View`
   border-radius: 6px;
 `;
 
-export const TInput = styled.TextInput.attrs({
-  placeholderTextColor: "#B3AEAE"
+export const TextInput = styled.TextInput.attrs({
+  placeholderTextColor: "#B3AEAE",
 })`
   flex: 1;
   font-size: 16px;
   margin-left: 9px;
   color: #fff;
+`;
+
+export const Title = styled.Text`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f2ebeb;
+  opacity: 0.7;
+  margin-bottom: 8px;
+  margin-right: auto;
 `;

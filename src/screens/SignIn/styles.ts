@@ -14,7 +14,7 @@ export const FormInput = styled(Input)`
 `;
 
 export const SubmitButton = styled(Button)`
-  margin-top: 20px;
+  margin-top: 28px;
 `;
 
 export const Logo = styled.Image`
