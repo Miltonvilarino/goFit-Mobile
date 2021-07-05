@@ -1,11 +1,13 @@
 import React from 'react'
 import { Container, SubmitButton, TInput, Form, TitleRadio } from './styles'
 import BackButton from '../../components/BackButton'
+import { ScrollView } from 'react-native'
 
 import RadioB from './RadioButton'
 
 export default function SignUp() {
   return (
+    <ScrollView>
     <Container>
       <BackButton screen={'/Home'} />
       <Form>
@@ -20,5 +22,6 @@ export default function SignUp() {
       </Form>
       <SubmitButton children="Cadastrar" />
     </Container>
+    </ScrollView>
   )
 }

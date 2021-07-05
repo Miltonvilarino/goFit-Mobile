@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import RadioGroup, { RadioButtonProps } from 'react-native-radio-buttons-group'
-import {View} from 'react-native'
+import { View } from 'react-native'
 
 const radioButtonsData: RadioButtonProps[] = [
   {
@@ -15,8 +15,8 @@ const radioButtonsData: RadioButtonProps[] = [
       fontSize: 14,
     },
     containerStyle: {
-      marginLeft: 0
-    }
+      marginLeft: 0,
+    },
   },
   {
     id: '2',
@@ -54,13 +54,12 @@ export default function RadioB() {
   }
 
   return (
-    <View style={{justifyContent: 'flex-start'}}>
+    <View>
       <RadioGroup
-      radioButtons={radioButtons}
-      onPress={onPressRadioButton}
-      layout="row"
-    />
+        radioButtons={radioButtons}
+        onPress={onPressRadioButton}
+        layout="row"
+      />
     </View>
-
   )
 }
