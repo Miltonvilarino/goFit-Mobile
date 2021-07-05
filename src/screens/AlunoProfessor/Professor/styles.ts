@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
-import Button from "../../components/Button";
-import { theme } from "../../global/styles/theme";
+import Button from "../../../components/Button";
+import { theme } from "../../../global/styles/theme";
 
 export const Container = styled.View`
   flex: 1;
@@ -10,13 +10,11 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-style: normal;
-  font-weight: 700;
-  font-weight: bold;
   font-size: 45px;
   line-height: 45px;
   color: #f2ebeb;
   margin-top: 94px;
+  font-family: 'Quicksand_700Bold';
 `;
 
 export const Content = styled.View`

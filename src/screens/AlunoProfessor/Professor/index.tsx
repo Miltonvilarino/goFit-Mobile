@@ -1,6 +1,6 @@
 import React from 'react'
-import BackButton from '../../components/BackButton'
-import Input from '../../components/Input'
+import BackButton from '../../../components/BackButton'
+import Input from '../../../components/Input'
 import {Container, Title, Texto, ConfirmButton, Content} from './styles'
 
 export default function Professor() {
