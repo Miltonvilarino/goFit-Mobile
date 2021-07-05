@@ -7,11 +7,13 @@ type Props = {
   children: ReactNode;
   loading?: string;
   onPress?: any;
+  width?: string;
+  height?: string;
 }
 
-export default function Button({ children, loading, ...rest }: Props) {
+export default function Button({ children, loading, ...props }: Props) {
   return (
-    <Container {...rest}>
+    <Container {...props}>
       {loading ? (
         <ActivityIndicator size="small" color="#FFF" />
       ) : (

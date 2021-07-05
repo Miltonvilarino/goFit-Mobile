@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { View } from 'react-native'
-import Icon from 'react-native-vector-icons/Feather'
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import Icon from 'react-native-vector-icons/Feather';
 
 import { Container, TextInput, Title, MaskedInput } from './styles'
 
@@ -14,8 +14,10 @@ type Props = {
   autoCapitalize?: any;
   masked?: any;
   props?: string;
-  width: string;
-  height: string;
+  width?: string;
+  height?: string;
+  mask?: string;
+  keyboardType?: any;
 }
 
 export default function Input({
@@ -27,6 +29,8 @@ export default function Input({
   autoCorrect,
   autoCapitalize,
   masked,
+  mask,
+  keyboardType,
   ...props
 }: Props) {
   const [maskedValue, setMaskedValue] = useState('')
@@ -41,12 +45,12 @@ export default function Input({
         )}
         {masked ? (
           <MaskedInput
-            mask="99/99/9999"
+            mask={mask}
             onChangeText={(text, rawText) => {
               setMaskedValue(text)
               setUnmaskedValue(rawText)
             }}
-            keyboardType="numeric"
+            keyboardType={keyboardType}
           />
         ) : (
           <TextInput

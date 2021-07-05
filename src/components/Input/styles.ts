@@ -2,8 +2,8 @@ import styled from "styled-components/native";
 import { MaskedTextInput} from "react-native-mask-text";
 
 interface ContainerProps {
-  width: string;
-  height: string;
+  width?: string;
+  height?: string;
 }
 
 export const Container = styled.View`
