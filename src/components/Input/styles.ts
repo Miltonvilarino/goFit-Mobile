@@ -25,6 +25,7 @@ export const TextInput = styled.TextInput.attrs({
   font-size: 16px;
   margin-left: 9px;
   color: #fff;
+  font-family: 'Quicksand_400Regular';
 `;
 
 export const MaskedInput = styled(MaskedTextInput)`
@@ -35,11 +36,10 @@ export const MaskedInput = styled(MaskedTextInput)`
 `;
 
 export const Title = styled.Text`
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #F2EBEB;
   margin-bottom: 8px;
   margin-right: auto;
+  font-family: 'Quicksand_500Medium';
 `;

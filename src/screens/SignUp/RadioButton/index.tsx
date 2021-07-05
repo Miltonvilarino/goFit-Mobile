@@ -40,6 +40,7 @@ const radioButtonsData: RadioButtonProps[] = [
       color: '#F2EBEB',
       marginLeft: 12,
       fontSize: 14,
+      fontFamily:'Quicksand_400Regular',
     },
   },
 ]

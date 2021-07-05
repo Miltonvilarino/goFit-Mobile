@@ -21,12 +21,11 @@ export const TInput = styled(Input)`
 `;
 
 export const TitleRadio = styled.Text`
-font-style: normal;
-font-weight: bold;
 font-size: 18px;
 line-height: 22px;
 color: #F2EBEB;
 margin-top: 14px;
 margin-bottom: 8px;
 margin-right: auto;
+font-family: 'Quicksand_500Medium';
 `;

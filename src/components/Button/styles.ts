@@ -18,4 +18,5 @@ export const Container = styled(BaseButton)`
 export const Text = styled.Text`
   color: #fff;
   font-size: 16px;
+  font-family: 'Quicksand_400Regular';
 `;
