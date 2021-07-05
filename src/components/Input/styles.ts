@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import { MaskedTextInput} from "react-native-mask-text";
 
 interface ContainerProps {
   width: string;
@@ -20,6 +21,13 @@ export const Container = styled.View`
 export const TextInput = styled.TextInput.attrs({
   placeholderTextColor: "#B3AEAE",
 })`
+  flex: 1;
+  font-size: 16px;
+  margin-left: 9px;
+  color: #fff;
+`;
+
+export const MaskedInput = styled(MaskedTextInput)`
   flex: 1;
   font-size: 16px;
   margin-left: 9px;

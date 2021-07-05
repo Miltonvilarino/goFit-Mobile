@@ -11,7 +11,7 @@ export default function SignUp() {
       <Form>
         <TInput width="272px" height="27px" title="Nome:" />
         <TInput width="272px" height="27px" title="Sobrenome:" />
-        <TInput width="130px" height="27px" title="Data de Nascimento:" />
+        <TInput width="130px" height="27px" title="Data de Nascimento:" masked/>
         <TitleRadio>Gênero</TitleRadio>
         <RadioB />
         <TInput width="272px" height="27px" title="E-mail:" />
