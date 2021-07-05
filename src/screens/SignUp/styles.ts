@@ -19,3 +19,14 @@ export const Form = styled.View`
 export const TInput = styled(Input)`
   margin-top: 14px;
 `;
+
+export const TitleRadio = styled.Text`
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+color: #F2EBEB;
+margin-top: 14px;
+margin-bottom: 8px;
+margin-right: auto;
+`;

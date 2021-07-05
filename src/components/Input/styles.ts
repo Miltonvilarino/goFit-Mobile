@@ -31,8 +31,7 @@ export const Title = styled.Text`
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #f2ebeb;
-  opacity: 0.7;
+  color: #F2EBEB;
   margin-bottom: 8px;
   margin-right: auto;
 `;
