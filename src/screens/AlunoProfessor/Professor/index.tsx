@@ -7,7 +7,7 @@ export default function Professor() {
   return (
     <Container>
       <BackButton screen={'/AlunoProfessor'} />
-      <Title>Professor</Title>
+      <Title>PROFESSOR</Title>
       <Content>
         <Texto>Para dar continuidade, é necessário que você informe seu CREF:</Texto>
         <Input width="123px" height="25px" masked mask={"SSSSSS-S/SS"} />

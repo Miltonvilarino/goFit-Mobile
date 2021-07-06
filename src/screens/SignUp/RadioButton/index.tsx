@@ -11,8 +11,9 @@ const radioButtonsData: RadioButtonProps[] = [
     color: '#FE0707',
     labelStyle: {
       color: '#F2EBEB',
-      marginLeft: 12,
+      marginLeft: 8,
       fontSize: 14,
+      fontFamily:'Quicksand_400Regular',
     },
     containerStyle: {
       marginLeft: 0,
@@ -26,19 +27,20 @@ const radioButtonsData: RadioButtonProps[] = [
     color: '#FE0707',
     labelStyle: {
       color: '#F2EBEB',
-      marginLeft: 12,
+      marginLeft: 8,
       fontSize: 14,
+      fontFamily:'Quicksand_400Regular',
     },
   },
   {
     id: '3',
-    label: 'Flex',
+    label: 'Outros',
     size: 16,
     color: '#FE0707',
     value: 'option3',
     labelStyle: {
       color: '#F2EBEB',
-      marginLeft: 12,
+      marginLeft: 8,
       fontSize: 14,
       fontFamily:'Quicksand_400Regular',
     },

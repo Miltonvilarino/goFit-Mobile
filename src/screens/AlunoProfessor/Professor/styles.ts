@@ -10,7 +10,7 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 45px;
+  font-size: 36px;
   line-height: 45px;
   color: #f2ebeb;
   margin-top: 94px;
@@ -26,10 +26,11 @@ export const Content = styled.View`
 export const Texto = styled.Text`
   width: 168px;
   height: 80px;
-  font-style: normal;
+  font-family: 'Quicksand_500Medium';
   font-size: 16px;
   line-height: 20px;
   color: #f2ebeb;
+  margin-bottom: 8px;
 `;
 
 export const ConfirmButton = styled(Button)`

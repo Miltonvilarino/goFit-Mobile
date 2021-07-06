@@ -9,7 +9,7 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 45px;
+  font-size: 36px;
   line-height: 45px;
   margin-top: 92px;
   color: #f2ebeb;
@@ -20,6 +20,10 @@ export const Content = styled.View`
   justify-content: center;
   align-items: center;
   margin-top: 82px;
+`;
+
+export const Forma = styled.Image`
+  position: absolute;
 `;
 
 export const Texto = styled.Text`
