@@ -10,6 +10,7 @@ import Aluno from '../screens/Aluno'
 import CodeRecovery from '../screens/CodeRecovery'
 import PasswordRecovery from '../screens/PasswordRecovery'
 import NewPassword from '../screens/NewPassword'
+import Anamnese from '../screens/Anamnese'
 
 const { Navigator, Screen } = createStackNavigator()
 
@@ -23,11 +24,12 @@ export function AuthRoutes() {
         },
       }}
       >
+      <Screen name="Aluno" component={Aluno} />
+      <Screen name="Anamnese" component={Anamnese} />
       <Screen name="Home" component={Home} />
       <Screen name="SignIn" component={SignIn} />
       <Screen name="SignUp" component={SignUp} />
       <Screen name="AlunoProfessor" component={AlunoProfessor} />
-      <Screen name="Aluno" component={Aluno} />
       <Screen name="Professor" component={Professor} />
       <Screen name="PasswordRecovery" component={PasswordRecovery} />
       <Screen name="NewPassword" component={NewPassword} />

@@ -24,9 +24,9 @@ export const Forma = styled.Image`
 `;
 
 export const Texto = styled.Text`
-  width: 107px;
+  width: 100px;
   height: 158px;
-  font-style: normal;
+  font-family: 'Quicksand_500Medium';
   font-size: 16px;
   line-height: 20px;
   color: #f2ebeb;

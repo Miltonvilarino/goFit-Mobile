@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 import Button from "../../components/Button";
-import { theme } from "../../global/styles/theme";
+import TitlePage from "../../components/TitlePage";
 
 export const Container = styled.View`
   flex: 1;
@@ -9,12 +9,8 @@ export const Container = styled.View`
   padding: 0 30px;
 `;
 
-export const Title = styled.Text`
-  font-size: 36px;
-  line-height: 45px;
-  color: #f2ebeb;
+export const Title = styled(TitlePage)`
   margin-top: 94px;
-  font-family: 'Quicksand_700Bold';
 `;
 
 export const Content = styled.View`

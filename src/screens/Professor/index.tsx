@@ -7,7 +7,7 @@ export default function Professor() {
   return (
     <Container>
       <BackButton screen={'/AlunoProfessor'} />
-      <Title>PROFESSOR</Title>
+      <Title text="PROFESSOR" />
       <Content>
         <Texto>
           Para dar continuidade, é necessário que você informe seu CREF:

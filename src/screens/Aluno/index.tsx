@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigation } from '@react-navigation/native'
 import FormaImg from '../../assets/forma.png'
 import BackButton from '../../components/BackButton'
 import {
@@ -12,6 +13,12 @@ import {
 } from './styles'
 
 export default function Aluno() {
+    const navigation = useNavigation()
+
+    function NavigationTo() {
+      navigation.navigate('Anamnese')
+    }
+
   return (
     <Container>
       <BackButton screen={'/AlunoProfessor'} />
@@ -22,7 +29,7 @@ export default function Aluno() {
           Agora precisamos que você preencha um formulário de anamnese
         </Texto>
       </Content>
-      <ConfirmButton children="Confirmar" />
+      <ConfirmButton children="Confirmar" onPress={NavigationTo} />
     </Container>
   )
 }
