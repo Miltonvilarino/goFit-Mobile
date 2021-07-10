@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
-import Button from "../../../components/Button";
-import Input from '../../../components/Input'
+import Button from "../../components/Button";
+import { theme } from "../../global/styles/theme";
 
 export const Container = styled.View`
   flex: 1;
@@ -10,33 +10,30 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 28px;
-  line-height: 35px;
-  width: 214px;
-  height: 67px;
+  font-size: 36px;
+  line-height: 45px;
   color: #f2ebeb;
   margin-top: 94px;
   font-family: 'Quicksand_700Bold';
 `;
 
 export const Content = styled.View`
+  margin-right: 144px;
+  margin-left: 44px;
   margin-top: 97px;
 `;
 
 export const Texto = styled.Text`
-  width: 278px;
-  height: 40px;
+  width: 168px;
+  height: 80px;
   font-family: 'Quicksand_500Medium';
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   color: #f2ebeb;
-`;
-
-export const CodeInput = styled(Input)`
-  margin-top: 14px;
+  margin-bottom: 8px;
 `;
 
 export const ConfirmButton = styled(Button)`
-  margin-top: 32px;
+  margin-top: 123px;
   margin-bottom: 128px;
 `;

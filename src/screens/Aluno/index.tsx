@@ -1,6 +1,6 @@
 import React from 'react'
-import FormaImg from '../../../assets/forma.png'
-import BackButton from '../../../components/BackButton'
+import FormaImg from '../../assets/forma.png'
+import BackButton from '../../components/BackButton'
 import {
   Container,
   Title,
@@ -8,13 +8,14 @@ import {
   ConfirmButton,
   Content,
   Forma,
+
 } from './styles'
 
 export default function Aluno() {
   return (
     <Container>
       <BackButton screen={'/AlunoProfessor'} />
-      <Title>ALUNO</Title>
+      <Title text="ALUNO"/>
       <Content>
         <Forma source={FormaImg} resizeMode="stretch"/>
         <Texto>

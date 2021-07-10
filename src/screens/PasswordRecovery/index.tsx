@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import BackButton from '../../../components/BackButton'
+import BackButton from '../../components/BackButton'
 import { Container, Title, Texto, ConfirmButton, Content, EmailInput } from './styles'
 
 export default function PasswordRecovery() {

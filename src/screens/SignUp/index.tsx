@@ -29,9 +29,29 @@ export default function SignUp() {
           />
           <TitleRadio>Gênero</TitleRadio>
           <RadioB />
-          <TInput width="272px" height="27px" title="E-mail:" />
-          <TInput width="272px" height="27px" title="Senha:" secureTextEntry />
-          <TInput width="272px" height="27px" title="Confirmar senha:" secureTextEntry />
+          <TInput
+            width="272px"
+            height="27px"
+            title="E-mail:"
+            autoCorrect={false}
+            autoCapitalize="none"
+          />
+          <TInput
+            width="272px"
+            height="27px"
+            title="Senha:"
+            secureTextEntry
+            autoCorrect={false}
+            autoCapitalize="none"
+          />
+          <TInput
+            width="272px"
+            height="27px"
+            title="Confirmar senha:"
+            secureTextEntry
+            autoCorrect={false}
+            autoCapitalize="none"
+          />
         </Form>
         <SubmitButton children="Cadastrar" onPress={handleNavigation} />
       </Container>
