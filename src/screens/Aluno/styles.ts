@@ -9,9 +9,7 @@ export const Container = styled.View`
   padding: 0 30px;
 `;
 
-export const Title = styled(TitlePage)`
-  margin-top: 92px;
-`;
+export const Title = styled(TitlePage)``;
 
 export const Content = styled.View`
   justify-content: center;
@@ -26,13 +24,13 @@ export const Forma = styled.Image`
 export const Texto = styled.Text`
   width: 100px;
   height: 158px;
-  font-family: 'Quicksand_500Medium';
+  font-family: "Quicksand_500Medium";
   font-size: 16px;
   line-height: 20px;
   color: #f2ebeb;
 `;
 
 export const ConfirmButton = styled(Button)`
-  margin-top: 103px;
-  margin-bottom: 128px;
+  margin-bottom: 80px;
+  margin-top: 93px;
 `;

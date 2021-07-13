@@ -22,7 +22,7 @@ export const Content = styled.View`
 export const Texto = styled.Text`
   width: 168px;
   height: 80px;
-  font-family: 'Quicksand_500Medium';
+  font-family: "Quicksand_500Medium";
   font-size: 16px;
   line-height: 20px;
   color: #f2ebeb;
@@ -30,6 +30,6 @@ export const Texto = styled.Text`
 `;
 
 export const ConfirmButton = styled(Button)`
-  margin-top: 123px;
-  margin-bottom: 128px;
+  margin-bottom: 80px;
+  margin-top: 93px;
 `;

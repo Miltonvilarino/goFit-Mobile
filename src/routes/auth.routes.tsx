@@ -24,11 +24,11 @@ export function AuthRoutes() {
         },
       }}
       >
-      <Screen name="Aluno" component={Aluno} />
-      <Screen name="Anamnese" component={Anamnese} />
       <Screen name="Home" component={Home} />
-      <Screen name="SignIn" component={SignIn} />
       <Screen name="SignUp" component={SignUp} />
+      <Screen name="Anamnese" component={Anamnese} />
+      <Screen name="Aluno" component={Aluno} />
+      <Screen name="SignIn" component={SignIn} />
       <Screen name="AlunoProfessor" component={AlunoProfessor} />
       <Screen name="Professor" component={Professor} />
       <Screen name="PasswordRecovery" component={PasswordRecovery} />

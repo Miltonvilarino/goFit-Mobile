@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { MaskedTextInput} from "react-native-mask-text";
+import { MaskedTextInput } from "react-native-mask-text";
 
 interface ContainerProps {
   width?: string;

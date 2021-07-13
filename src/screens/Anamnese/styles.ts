@@ -21,7 +21,7 @@ export const Content = styled.View`
 `;
 
 export const Texto = styled.Text`
-  font-family: 'Quicksand_500Medium';
+  font-family: "Quicksand_500Medium";
   font-size: 16px;
   line-height: 20px;
   color: #f2ebeb;
@@ -29,6 +29,6 @@ export const Texto = styled.Text`
 `;
 
 export const ConfirmButton = styled(Button)`
+  margin-bottom: 80px;
   margin-top: 140px;
-  margin-bottom: 128px;
 `;

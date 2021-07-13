@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Container, SubmitButton, TInput, Form, TitleRadio } from './styles'
 import BackButton from '../../components/BackButton'
 import { ScrollView } from 'react-native'

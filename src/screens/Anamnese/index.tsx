@@ -16,10 +16,10 @@ export default function Anamnese() {
             width="77px"
             height="27px"
             masked
-            mask={'999'}
+            mask={"SS"}
             autoCorrect={false}
             autoCapitalize="none"
-            keyboardType="numeric"
+            keyboardType="decimal-pad"
           />
         </View>
 
@@ -29,7 +29,7 @@ export default function Anamnese() {
             width="77px"
             height="27px"
             masked
-            mask={'999'}
+            mask={"9,99"}
             autoCorrect={false}
             autoCapitalize="none"
             keyboardType="numeric"
