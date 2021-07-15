@@ -1,13 +1,19 @@
-import React from 'react'
-import { View } from 'react-native'
-import BackButton from '../../components/BackButton'
-import Input from '../../components/Input'
-import { Container, Title, Texto, ConfirmButton, Content } from './styles'
+import React from "react";
+import { View } from "react-native";
+import BackButton from "../../components/BackButton";
+import { useNavigation } from "@react-navigation/native";
+import Input from "../../components/Input";
+import { Container, Title, Texto, ConfirmButton, Content } from "./styles";
 
 export default function Anamnese() {
+  const navigation = useNavigation();
+
+  function handleNavigation() {
+    navigation.navigate("AnamneseOne");
+  }
   return (
     <Container>
-      <BackButton screen={'/Aluno'} />
+      <BackButton screen={"/Aluno"} />
       <Title text="ANAMNESE" />
       <Content>
         <View>
@@ -23,7 +29,7 @@ export default function Anamnese() {
           />
         </View>
 
-        <View style={{marginLeft: 18}}>
+        <View style={{ marginLeft: 18 }}>
           <Texto>Altura:</Texto>
           <Input
             width="77px"
@@ -36,7 +42,7 @@ export default function Anamnese() {
           />
         </View>
       </Content>
-      <ConfirmButton children="Confirmar" />
+      <ConfirmButton children="Confirmar" onPress={handleNavigation} />
     </Container>
-  )
+  );
 }

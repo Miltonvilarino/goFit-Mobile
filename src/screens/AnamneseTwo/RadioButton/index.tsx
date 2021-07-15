@@ -5,7 +5,7 @@ import { View } from "react-native";
 const radioButtonsData: RadioButtonProps[] = [
   {
     id: "1",
-    label: "Masculino",
+    label: "Emagrecimentos",
     value: "option1",
     size: 16,
     color: "#FE0707",
@@ -16,34 +16,23 @@ const radioButtonsData: RadioButtonProps[] = [
       fontFamily: "Quicksand_400Regular",
     },
     containerStyle: {
-      marginLeft: 0,
+      padding: 10,
     },
   },
   {
     id: "2",
-    label: "Feminino",
-    value: "option2",
+    label: "Condicionamento físico",
+    value: "option1",
     size: 16,
     color: "#FE0707",
-    labelStyle: {
-      color: "#F2EBEB",
-      marginLeft: 8,
-
-      fontSize: 14,
-      fontFamily: "Quicksand_400Regular",
-    },
-  },
-  {
-    id: "3",
-    label: "Outros",
-    size: 16,
-    color: "#FE0707",
-    value: "option3",
     labelStyle: {
       color: "#F2EBEB",
       marginLeft: 8,
       fontSize: 14,
       fontFamily: "Quicksand_400Regular",
+    },
+    containerStyle: {
+      padding: 10,
     },
   },
 ];
