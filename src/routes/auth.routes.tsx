@@ -13,7 +13,7 @@ import NewPassword from "../screens/NewPassword";
 import Anamnese from "../screens/Anamnese";
 import AnamneseOne from "../screens/AnamneseOne";
 import AnamneseTwo from "../screens/AnamneseTwo";
-
+import AnamneseThree from "../screens/AnamneseThree";
 const { Navigator, Screen } = createStackNavigator();
 
 export function AuthRoutes() {
@@ -31,6 +31,7 @@ export function AuthRoutes() {
       <Screen name="Anamnese" component={Anamnese} />
       <Screen name="AnamneseOne" component={AnamneseOne} />
       <Screen name="AnamneseTwo" component={AnamneseTwo} />
+      <Screen name="AnamneseThree" component={AnamneseThree} />
       <Screen name="Aluno" component={Aluno} />
       <Screen name="SignIn" component={SignIn} />
       <Screen name="AlunoProfessor" component={AlunoProfessor} />
