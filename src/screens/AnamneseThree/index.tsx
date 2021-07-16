@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import BackButton from "../../components/BackButton";
 import RadioB from "./RadioButton";
 import {
@@ -13,6 +14,11 @@ import {
 } from "./styles";
 
 export default function AnamneseThree() {
+  const navigation = useNavigation();
+
+  function NavigationTo() {
+    navigation.navigate("Welcome");
+  }
   return (
     <Container>
       <BackButton screen={"/AnamneseTwo"} />
@@ -23,9 +29,9 @@ export default function AnamneseThree() {
           <RadioB />
         </View>
         <Text>Explique:</Text>
-        <TInput width="272" height="27px" />
+        <TInput />
       </Content>
-      <ConfirmButton children="Confirmar" />
+      <ConfirmButton children="Confirmar" onPress={NavigationTo} />
     </Container>
   );
 }

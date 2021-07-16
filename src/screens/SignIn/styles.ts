@@ -22,9 +22,8 @@ export const Logo = styled.Image`
 `;
 
 export const Title = styled.Text`
-margin-top: 30px;
-font-size: 14px;
-line-height: 17px;
-color: #f2ebeb;
-text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.6);
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f2ebeb;
 `;
