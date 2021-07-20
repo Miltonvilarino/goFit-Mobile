@@ -22,7 +22,12 @@ export default function Anamnese() {
             width="77px"
             height="27px"
             masked
-            mask={"SS"}
+            type="currency"
+            options={{
+              suffix: 'Kg',
+              decimalSeparator: '.',
+              precision: 1
+            }}
             autoCorrect={false}
             autoCapitalize="none"
             keyboardType="decimal-pad"
@@ -35,7 +40,12 @@ export default function Anamnese() {
             width="77px"
             height="27px"
             masked
-            mask={"9,99"}
+            type="currency"
+            options={{
+              suffix: 'm',
+              decimalSeparator: ',',
+              precision: 2
+            }}
             autoCorrect={false}
             autoCapitalize="none"
             keyboardType="numeric"

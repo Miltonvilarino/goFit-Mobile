@@ -17,6 +17,8 @@ type Props = {
   width?: string;
   height?: string;
   mask?: string;
+  options?: object;
+  type?: any;
   keyboardType?: any;
 }
 
@@ -31,6 +33,8 @@ export default function Input({
   masked,
   mask,
   keyboardType,
+  options,
+  type,
   ...props
 }: Props) {
   const [maskedValue, setMaskedValue] = useState('')
@@ -46,6 +50,8 @@ export default function Input({
         {masked ? (
           <MaskedInput
             mask={mask}
+            type={type}
+            options={options}
             onChangeText={(text, rawText) => {
               setMaskedValue(text)
               setUnmaskedValue(rawText)

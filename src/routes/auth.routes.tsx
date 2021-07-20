@@ -27,9 +27,9 @@ export function AuthRoutes() {
         },
       }}
     >
+      <Screen name="Anamnese" component={Anamnese} />
       <Screen name="Home" component={Home} />
       <Screen name="SignUp" component={SignUp} />
-      <Screen name="Anamnese" component={Anamnese} />
       <Screen name="AnamneseOne" component={AnamneseOne} />
       <Screen name="AnamneseTwo" component={AnamneseTwo} />
       <Screen name="AnamneseThree" component={AnamneseThree} />
