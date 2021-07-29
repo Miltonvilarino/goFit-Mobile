@@ -7,9 +7,11 @@ interface ContainerProps {
 }
 
 export const Container = styled(BaseButton)`
-  width: ${(props:ContainerProps) => props.width ? `${props.width}` : '158px'};
-  height: ${(props:ContainerProps) => props.height ? `${props.height}` : '40px'};
-  background: #BF1622;
+  width: ${(props: ContainerProps) =>
+    props.width ? `${props.width}` : '158px'};
+  height: ${(props: ContainerProps) =>
+    props.height ? `${props.height}` : '40px'};
+  background: #bf1622;
   border-radius: 21px;
   align-items: center;
   justify-content: center;

@@ -23,6 +23,7 @@ export const Form = styled.Image`
 export const Texto = styled.Text`
   height: 100px;
   width: 200px;
+  margin-left: 22px;
   font-family: 'Quicksand_500Medium';
   font-size: 18px;
   color: #f2ebeb;
@@ -30,6 +31,6 @@ export const Texto = styled.Text`
 `;
 
 export const ConfirmButton = styled(Button)`
-  margin-bottom: 80px;
-  margin-top: 93px;
+  margin-bottom: 70px;
+  margin-top: 193px;
 `;
