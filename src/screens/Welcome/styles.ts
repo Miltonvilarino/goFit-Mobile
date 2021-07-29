@@ -1,6 +1,6 @@
-import styled from "styled-components/native";
-import Button from "../../components/Button";
-import TitlePage from "../../components/TitlePage";
+import styled from 'styled-components/native';
+import Button from '../../components/Button';
+import TitlePage from '../../components/TitlePage';
 
 export const Container = styled.View`
   flex: 1;
@@ -20,12 +20,12 @@ export const Form = styled.Image`
   position: absolute;
 `;
 
-export const Text = styled.Text`
-  width: 100px;
+export const Texto = styled.Text`
   height: 168px;
-  font-family: "Quicksand_500Medium";
+  font-family: 'Quicksand_500Medium';
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 66px;
+  margin-left: 50px;
   line-height: 25px;
   color: #f2ebeb;
 `;

@@ -8,11 +8,12 @@ export const theme = {
     heading: '#F2EBEB',
     title: '#F2EBEB',
     image: '#F2EBEB',
+    background: '#1C1C1C',
   },
 
   fonts: {
     text400: 'Quicksand_400Regular',
     text500: 'Quicksand_500Medium',
-    title700: 'Quicksand_700Bold'
-  }
-}
+    title700: 'Quicksand_700Bold',
+  },
+};

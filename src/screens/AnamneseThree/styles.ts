@@ -1,7 +1,7 @@
-import styled from "styled-components/native";
-import Button from "../../components/Button";
-import TitlePage from "../../components/TitlePage";
-import Input from "../../components/Input";
+import styled from 'styled-components/native';
+import Button from '../../components/Button';
+import TitlePage from '../../components/TitlePage';
+import Input from '../../components/Input';
 
 export const Container = styled.View`
   flex: 1;
@@ -28,9 +28,9 @@ export const TitleRadio = styled.Text`
   margin-top: 80px;
   margin-bottom: 8px;
   margin-right: auto;
-  margin-left: -20px;
+  margin-left: -30px;
 
-  font-family: "Quicksand_500Medium";
+  font-family: 'Quicksand_500Medium';
 `;
 
 export const Text = styled.Text`

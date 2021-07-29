@@ -1,7 +1,10 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-position: absolute;
-right: 107%;
-bottom: 91%;
+  margin-top: 60px;
+
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  bottom: 91%;
 `;
