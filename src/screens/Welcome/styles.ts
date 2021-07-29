@@ -21,13 +21,12 @@ export const Form = styled.Image`
 `;
 
 export const Texto = styled.Text`
-  height: 168px;
+  height: 100px;
+  width: 200px;
   font-family: 'Quicksand_500Medium';
-  font-size: 16px;
-  margin-top: 66px;
-  margin-left: 50px;
-  line-height: 25px;
+  font-size: 18px;
   color: #f2ebeb;
+  text-align: center;
 `;
 
 export const ConfirmButton = styled(Button)`
